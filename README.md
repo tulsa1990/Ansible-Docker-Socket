@@ -21,7 +21,7 @@ You should how see a bash prompt where you can run your commands.
 
 Change to the infrastructure directory and open the playbook.yml in your favorite editor. There are two tasks in this playbook, one for the flask container and the other for the redis container. Notice that the flask container is linked to the redis container. Run the Ansible playbook.
 
-```{r, engine='bash', count_lines}
+```
 $ ./run-playbook.sh
  [WARNING]: Host file not found: /etc/ansible/hosts
 
