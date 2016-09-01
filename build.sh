@@ -1,0 +1,1 @@
+docker build -t docker-ansible -t whale1990/docker-ansible .

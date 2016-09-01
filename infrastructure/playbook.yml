@@ -1,0 +1,38 @@
+
+---
+
+- hosts: 127.0.0.1
+
+  connection: local
+
+  tasks:
+
+    # tasks file for ansible-dockerized-flask-app
+
+    - name: "Launch redis database container"
+    
+      docker_container:
+      
+       name: redis
+       
+       image: redis
+
+       #pull: yes
+       
+    - name: "Launch flask app container"
+
+      docker_container:
+
+        name: app
+
+        image: whale1990/flask-app
+       
+        expose: 5000 # <- PITA
+       
+        ports:
+        - "5000:5000"
+
+        links:
+        - redis
+
+
