@@ -46,7 +46,7 @@ PLAY RECAP *********************************************************************
 
 Verify that the containers are running. You should see a flask-app container and a redis container listed under the image column.
 
-```{r, engine='bash', count_lines}
+```
 # docker ps -a
 CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                    NAMES
 583cff0c8b8d        whale1990/flask-app   "/bin/sh -c 'python a"   4 minutes ago       Up 4 minutes        0.0.0.0:5000->5000/tcp   app
