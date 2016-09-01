@@ -10,7 +10,7 @@ On this GitHub page you should find a green button labeled "clone or download". 
 
 ## Start the ansible container
 
-```{r, engine='bash', count_lines}
+```
 $ ./run
 
 ```
@@ -62,7 +62,7 @@ Open a web browser and connect to the running app at http://localhost:5000.  You
 
 Stop and remove the running containers using the continer ids from the previous step.
 
-```{r, engine='bash', count_lines}
+```
 # docker rm -f 583cff0c8b8d 8d3deea0b586
 583cff0c8b8d
 8d3deea0b586
@@ -70,7 +70,7 @@ Stop and remove the running containers using the continer ids from the previous 
 
 Stop the Ansible container. The container will be automatically removed after the exit command.
 
-```{r, engine='bash', count_lines}
+```
 # exit
 
 ```
