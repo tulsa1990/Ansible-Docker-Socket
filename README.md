@@ -11,7 +11,7 @@ On this GitHub page you should find a green button labeled "clone or download". 
 ## Start the ansible container
 
 ```
-$ ./run
+$ ./run.sh
 ```
 
 You should how see a bash prompt where you can run your commands.
